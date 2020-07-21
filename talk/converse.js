@@ -9,7 +9,7 @@ function getName(){
             username = user.displayName;
         } 
         else {
-            window.location.replace("../auth/user.html");
+            window.location.replace("https://daman1209arora.github.io/openbook/auth/user.html");
         }
     });
 }
@@ -18,7 +18,7 @@ async function logout(){
     console.log("Logging out");
     auth.signOut()
         .then(function(){
-            window.location.replace("../auth/user.html")
+            window.location.replace("https://daman1209arora.github.io/openbook/auth/user.html")
         })
         .catch(function(error){
             console.log("Something went wrong");

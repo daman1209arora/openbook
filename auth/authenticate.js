@@ -12,7 +12,7 @@ function registerUser(event) {
                     user.updateProfile({
                         displayName: name,
                     }).then(function(){
-                        window.location.replace("../talk/index.html");
+                        window.location.replace("https://daman1209arora.github.io/openbook/talk/index.html");
                     }).catch(function(error){
                         console.log("Failure");
                     });
@@ -49,7 +49,7 @@ function loginUser(event) {
 function isLoggedIn() {
     var check = firebase.auth().onAuthStateChanged(function(user) {
         if (user) {  
-            window.location.replace("../talk/index.html");
+            window.location.replace("https://daman1209arora.github.io/openbook/talk/index.html");
         } 
         else {
             console.log("None");
